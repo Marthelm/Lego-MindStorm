@@ -17,6 +17,7 @@ us = UltrasonicSensor(port=Port.S1)
 colorSensorV = ColorSensor(port=Port.S2)
 colorSensorH = ColorSensor(port=Port.S3)
 touch = TouchSensor(port=Port.S4)
+us = UltrasonicSensor(port=Port.S1)
 #RED = 20
 #GREEN = 20
 #BLUE = 30
@@ -26,7 +27,7 @@ start = True
 startag = False
 while(start):
     (RED, GREEN, BLUE) = colorSensorV.rgb()
-    (RED1, GREEN1, BLUE1 ) = colorSensorH.rgb()
+    (RED, GREEN, BLUE ) = colorSensorH.rgb()
     RED -=5
     GREEN -=5
     BLUE -=20
